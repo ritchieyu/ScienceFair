@@ -1,2 +1,2 @@
 # ScienceFair
-Code written for 2020 tinnitus science fair
+Code written for 2020 INSPO and YSC science fair project on tinnitus

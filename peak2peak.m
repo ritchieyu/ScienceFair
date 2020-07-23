@@ -51,7 +51,7 @@ for p = 1:size(mouseNames,1)
         end
     end
     
-   writecell(names_ranges,'rangedata.xlsx','sheet',p,'Range','A3:L22');
+   writecell(names_ranges,'rangedata.xlsx','sheet',p,'Range','A3:L22'); % Send processed data to respective Excel sheets
     
 end
 

@@ -51,10 +51,10 @@ for p = 1:size(mouseNames,1)
         end
     end
     
-   % Send processed data to pre-organized, respective Excel sheets - replace ExcelSheet with name of designated Excel file
+   % Send processed data to pre-organized, respective Excel sheets - replace 'rangedata.xlsx' with name of designated Excel file
    % Each sheet corresponds to the data for each mouse
    % Different Excel files were used for different ASR features
-   writecell(names_ranges, ExcelSheet ,'sheet',p,'Range','A3:L22'); 
+   writecell(names_ranges, 'rangedata.xlsx' ,'sheet',p,'Range','A3:L22'); 
     
 end
 

@@ -1,4 +1,4 @@
-xx = damFileRead(fullFileName); % Read .dam file
+xx = damFileRead(fullFileName); % Read .dam file, replace fullFileName with file path to a .dam file
 samples = 1:24415;
 yy = (mean(horzcat(xx.signal),2));
 smooth_signal = sgolayfilt(yy/3276.5, 2, 201); % Savitsky-Golay filter

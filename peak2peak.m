@@ -42,7 +42,7 @@ for p = 1:size(mouseNames,1)
             t = samples/Fs;
             yy = (mean(horzcat(xx.signal),2)); % Concatenate arrays horizontally to average across 2nd dimension
             y_values = yy/3276.5;
-            smooth_signal = sgolayfilt(y_values, 2, 201); % Savitsky golay filter
+            smooth_signal = sgolayfilt(y_values, 2, 201); % Savitsky-Golay filter
             z = range(smooth_signal);
             
             % Populate empty cell array 

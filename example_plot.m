@@ -16,9 +16,9 @@ ylim([-1.8,1.8])
 set(gca,'xticklabel',[]),set(gca,'yticklabel',[])
 set(gca,'xtick',[]), set(gca,'ytick',[])
 ylabel("Voltage (V)")
-axh = gca; % use current axes
-color = 'k'; % black, or [0 0 0]
-linestyle = '-'; % dotted
+axh = gca; 
+color = 'k';
+linestyle = '-';
 line(get(axh,'XLim'), [0 0], 'Color', color, 'LineStyle', linestyle);
 
 % Plot absolute value ASR waveform 
@@ -29,9 +29,9 @@ set(gca,'xticklabel',[]),set(gca,'yticklabel',[])
 set(gca,'xtick',[]), set(gca,'ytick',[])
 ylabel("Voltage (V)")
 xlabel("Time (ms)")
-axh = gca; % use current axes
-color = 'k'; % black, or [0 0 0]
-linestyle = '-'; % dotted
+axh = gca;
+color = 'k'; 
+linestyle = '-'; 
 line(get(axh,'XLim'), [0 0], 'Color', color, 'LineStyle', linestyle);
 
 

@@ -5,7 +5,7 @@ This code efficiently processed a large set of collected data, and was responsib
 
 Located in a parent folder, the collected data was organized into 5 folders, each of which contained four subfolders, and each subfolder contained ~15 .dam files which each stored the data for one ASR waveform. The "peak2peak.m" script in this repo iterates through each folder, subfolder and .dam file to process and clean waveforms, and to calculate peak-to-peak amplitude. Running this script extracts the peak-to-peak amplitude for every single waveform (~300 waveforms) and sends it to organized, designated sheets in Excel. 
 
-The other two scripts, "duration.m" and "latency.m," demonstrate the extraction of ASR latency and ASR duration features for a singular ASR waveform (i.e. one file). The iterative process of extracting from all waveforms at once was already demonstrated in the "peak2peak.m" script, and so was stripped from the code for these two features for better readability.
+The scripts "latency.m" and "duration.m" demonstrate the extraction of ASR latency and ASR duration features for a singular ASR waveform (i.e. one file). The iterative process of extracting from all waveforms at once was already demonstrated in the "peak2peak.m" script, and so was stripped from the code for these two features for better readability.
 
 MATLAB was also used to draw all the figures and graphs in my paper - "example_plot.m" includes sample foundational code used to draw Figure 2. 
 

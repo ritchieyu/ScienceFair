@@ -1,4 +1,4 @@
-xx = damFileRead(fullFileName); % Read .dam file
+xx = damFileRead(fullFileName); % Read .dam file, replace fullFileName with file path to a .dam file
 samples = 1:24415;
 yy = (mean(horzcat(xx.signal),2));
 y_values = yy/3276.7;

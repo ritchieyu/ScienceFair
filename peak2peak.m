@@ -32,7 +32,7 @@ for p = 1:size(mouseNames,1)
         theFiles = dir(filePattern);
         sorted_files = char(sort_nat({theFiles.name}));
         
-        % Perform analysis on files within each directory
+        % Perform analysis on files within each directory by using algorithm for determining peak-to-peak amplitude
         for i = 1 : size(sorted_files,1)
             baseFileName = deblank(sorted_files(i,:));
             fullFileName = fullfile(directoryNames(k,:), baseFileName);

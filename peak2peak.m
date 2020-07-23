@@ -1,4 +1,4 @@
-main_parent = '/Users/Ritchie/Desktop/Sci Fair/Data/Organized data';
+main_parent = fullFolderName; % Replace fullFolderName with file path to the main folder containing the organized data
 mouse_list = dir(main_parent);
 
 mouseNames = {mouse_list([mouse_list.isdir]).name}; 

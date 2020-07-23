@@ -1,4 +1,4 @@
-xx = damFileRead(fullFileName); % Replace fullFileName with file path to a .dam file
+xx = damFileRead(fullFileName); % Read .dam file, replace fullFileName with file path to a .dam file
 
 samples = 1:24415; 
 Fs=24.4140625; 

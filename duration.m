@@ -1,12 +1,12 @@
-xx = damFileRead(fullFileName);
+xx = damFileRead(fullFileName); % Read .dam file
 samples = 1:24415;
 yy = (mean(horzcat(xx.signal),2));
 y_values = yy/3276.7;
 smooth_signal = sgolayfilt(y_values, 2, 201); % Savitsky golay filter
-abs_y = abs(smooth_signal);
-time = samples/24.4140625;
 
 % Algorithm for determining half peak locations
+abs_y = abs(smooth_signal);
+time = samples/24.4140625;
 b_index = find(time <= 300);
 b_avg = sum(abs(smooth_signal(b_index)))/length(b_index);
 half_peak = ((max(abs_y)) - b_avg)/2;

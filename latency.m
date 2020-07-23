@@ -1,7 +1,7 @@
 xx = damFileRead(fullFileName);
 samples = 1:24415;
 yy = (mean(horzcat(xx.signal),2));
-smooth_signal = sgolayfilt(yy/3276.5, 2, 101);
+smooth_signal = sgolayfilt(yy/3276.5, 2, 201);
 
 % Algorithm for determining startle latency
 maxim = max(abs(smooth_signal));

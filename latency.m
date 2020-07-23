@@ -1,7 +1,7 @@
 xx = damFileRead(fullFileName); % Read .dam file
 samples = 1:24415;
 yy = (mean(horzcat(xx.signal),2));
-smooth_signal = sgolayfilt(yy/3276.5, 2, 201); % Savitsky Golay filter
+smooth_signal = sgolayfilt(yy/3276.5, 2, 201); % Savitsky-Golay filter
 
 % Algorithm for determining startle latency
 maxim = max(abs(smooth_signal));

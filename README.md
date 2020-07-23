@@ -7,7 +7,7 @@ The collected data was organized into 5 folders, each of which contained four su
 
 The other two scripts, "duration.m" and "latency.m," demonstrate the extraction of ASR duration and latency features for a singular ASR waveform (i.e. one file). The iterative process of extracting from all waveforms at once was already demonstrated in the "peak2peak.m" script, and so was stripped from the code for these two features for better readability.
 
-MATLAB was used to plot and draw figures, but that code is not included here. 
+MATLAB was also used to draw figures and plot graphs, but that code is not included here. 
 
 All code in this repo is self-written and third party functions used are not included. 
 
